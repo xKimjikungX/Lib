@@ -5,6 +5,8 @@ do
     end
 end
 
+print("Loaded")
+
 
 
 local UserInputService = game:GetService("UserInputService")
@@ -87,11 +89,12 @@ function create:Win()
     local fs = false 
     local currentservertoggled = ""
     local Main = Instance.new("Frame")
-    
+        
+    Main.Name = "Main"
     Main.Parent = Atomlib
     Main.BackgroundColor3 = Color3.fromRGB(19 , 19, 19)
     Main.BorderSizePixel = 0
-    Main.Position = UDim2.new(5, 0, 0.5   , 0)
+    Main.Position = UDim2.new(0.5, 0, 0.5, 0)
     Main.Size = UDim2.new(0, 0, 0, 0)
     Main.ClipsDescendants = true 
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
