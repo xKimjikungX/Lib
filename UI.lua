@@ -108,7 +108,7 @@ function create:Win()
     Logo.BorderColor3 = Color3.fromRGB(27, 42, 53)
     Logo.BorderSizePixel = 0
     Logo.Size = UDim2.new(0, 56, 0, 56)
-    Logo.Image = "http://www.roblox.com/asset"
+    Logo.Image = "http://www.roblox.com/asset/?id=9010576467"
     
     local PageTap = Instance.new("Frame")
     local UIGradient_PageTap = Instance.new("UIGradient")
