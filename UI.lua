@@ -103,11 +103,11 @@ function create:Win()
     Logo.Name = "Logo"
     Logo.Parent = Main
     Logo.AnchorPoint = Vector2.new(0.5, 0.5)
-    Logo.Position = UDim2.new(0.1, 0, 0.08, 0)
+    Logo.Position = UDim2.new(0.1, 0, 0, 0)
     Logo.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
     Logo.BorderColor3 = Color3.fromRGB(27, 42, 53)
     Logo.BorderSizePixel = 0
-    Logo.Size = UDim2.new(0, 52, 0, 52)
+    Logo.Size = UDim2.new(0, 35, 0, 35)
     Logo.Image = "http://www.roblox.com/asset/?id=9010576467"
     
     local PageTap = Instance.new("Frame")
