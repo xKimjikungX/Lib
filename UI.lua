@@ -5,8 +5,6 @@ do
     end
 end
 
-print("Loaded")
-
 
 
 local UserInputService = game:GetService("UserInputService")
@@ -94,7 +92,7 @@ function create:Win()
     Main.Parent = Atomlib
     Main.BackgroundColor3 = Color3.fromRGB(19 , 19, 19)
     Main.BorderSizePixel = 0
-    Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+    Main.Position = UDim2.new(0.15, 0, 0.3, 0)
     Main.Size = UDim2.new(0, 0, 0, 0)
     Main.ClipsDescendants = true 
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -108,7 +106,7 @@ function create:Win()
     Logo.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
     Logo.BorderColor3 = Color3.fromRGB(27, 42, 53)
     Logo.BorderSizePixel = 0
-    Logo.Size = UDim2.new(0, 52, 0, 52)
+    Logo.Size = UDim2.new(0, 50, 0, 50)
     Logo.Image = "http://www.roblox.com/asset/?id=9010576467"
     
     local PageTap = Instance.new("Frame")
