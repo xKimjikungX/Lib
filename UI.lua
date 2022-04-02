@@ -92,7 +92,7 @@ function create:Win()
     Main.Parent = Atomlib
     Main.BackgroundColor3 = Color3.fromRGB(19 , 19, 19)
     Main.BorderSizePixel = 0
-    Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+    Main.Position = UDim2.new(10, 0, 0.5, 0)
     Main.Size = UDim2.new(0, 0, 0, 0)
     Main.ClipsDescendants = true 
     Main.AnchorPoint = Vector2.new(0.5, 0.5)
