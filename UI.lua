@@ -103,11 +103,11 @@ function create:Win()
     Logo.Name = "Logo"
     Logo.Parent = Main
     Logo.AnchorPoint = Vector2.new(0.5, 0.5)
-    Logo.Position = UDim2.new(0.1, 0, 0.08, 0)
+    Logo.Position = UDim2.new(0, 0, 0.0, 0)
     Logo.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
     Logo.BorderColor3 = Color3.fromRGB(27, 42, 53)
     Logo.BorderSizePixel = 0
-    Logo.Size = UDim2.new(0, 50, 0, 50)
+    Logo.Size = UDim2.new(0, 52, 0, 52)
     Logo.Image = "http://www.roblox.com/asset/?id=9010576467"
     
     local PageTap = Instance.new("Frame")
@@ -197,13 +197,13 @@ function tap:addtap(text)
 
     TextLabel_Tap.Parent = TextButton_Tap
     TextLabel_Tap.Name = "TextLabel_Tap"
-    TextLabel_Tap.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    TextLabel_Tap.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     TextLabel_Tap.AnchorPoint = Vector2.new(0.5, 0.5)
     TextLabel_Tap.Position = UDim2.new(0.52, 0, 0.8, 0)
     TextLabel_Tap.Size = UDim2.new(0, 0, 0, 0)
     TextLabel_Tap.Font = Enum.Font.SourceSans
     TextLabel_Tap.Text = " "
-    TextLabel_Tap.TextColor3 = Color3.fromRGB(255, 0, 95)
+    TextLabel_Tap.TextColor3 = Color3.fromRGB(0, 205, 95)
     TextLabel_Tap.TextSize = 14.000
     TextLabel_Tap.BorderSizePixel = 0
 
@@ -350,7 +350,7 @@ function page:addpage()
     
     Page.Name = "Page"
     Page.Parent = MainPage
-    Page.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    Page.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     Page.BorderSizePixel = 0
     Page.Position = UDim2.new(0.51645571, 0, 0.0526315793, 0)
     Page.Size = UDim2.new(0, 178, 0, 262)
@@ -429,13 +429,13 @@ function ems:Button(text,callback)
 
     TextLabel_emsTextButton.Parent = emsTextButton
     TextLabel_emsTextButton.Name = "TextLabel_emsTextButton"
-    TextLabel_emsTextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    TextLabel_emsTextButton.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     TextLabel_emsTextButton.AnchorPoint = Vector2.new(0.5, 0.5)
     TextLabel_emsTextButton.Position = UDim2.new(0.5, 0, 0.5, 0)
     TextLabel_emsTextButton.Size = UDim2.new(0, 0, 0, 0)
     TextLabel_emsTextButton.Font = Enum.Font.GothamSemibold
     TextLabel_emsTextButton.Text = text
-    TextLabel_emsTextButton.TextColor3 = Color3.fromRGB(255, 0, 95)
+    TextLabel_emsTextButton.TextColor3 = Color3.fromRGB(0, 205, 95)
     TextLabel_emsTextButton.TextSize = 10.000
     TextLabel_emsTextButton.BorderSizePixel = 0
 
@@ -443,7 +443,7 @@ function ems:Button(text,callback)
                     
     MheeFrameStroke.Thickness = 1
     MheeFrameStroke.LineJoinMode = Enum.LineJoinMode.Round
-    MheeFrameStroke.Color = Color3.fromRGB(255, 0, 95)
+    MheeFrameStroke.Color = Color3.fromRGB(0, 205, 95)
     MheeFrameStroke.Transparency = 0
 
     emsTextButton.MouseButton1Click:Connect(function()
@@ -468,7 +468,7 @@ function ems:Button(text,callback)
             TweenService:Create(
                 emsTextButton,
                 TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                {BackgroundColor3 =  Color3.fromRGB(255, 0, 95)} -- UDim2.new(0, 128, 0, 25)
+                {BackgroundColor3 =  Color3.fromRGB(0, 205, 95)} -- UDim2.new(0, 128, 0, 25)
             ):Play()
 --     end
         -- joincheck = not joincheck
@@ -479,7 +479,7 @@ function ems:Button(text,callback)
             TweenService:Create(
                 emsTextButton,
                 TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                {BackgroundColor3 =  Color3.fromRGB(255, 0, 95)} -- UDim2.new(0, 128, 0, 25)
+                {BackgroundColor3 =  Color3.fromRGB(0, 205, 95)} -- UDim2.new(0, 128, 0, 25)
             ):Play()
     end)
 end
@@ -611,7 +611,7 @@ function  ems:Toggle(text,de,callback)
     local ToggleButton2 = Instance.new("TextButton")
 
     ToggleButton2.Parent = ToggleFrame
-    ToggleButton2.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    ToggleButton2.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     ToggleButton2.BackgroundTransparency = 1
     ToggleButton2.AnchorPoint = Vector2.new(0.5, 0.5)
     ToggleButton2.Position = UDim2.new(1, 0, 0.45, 0)
@@ -628,7 +628,7 @@ function  ems:Toggle(text,de,callback)
 
     TextLabelToggle.Parent = ToggleButton
     TextLabelToggle.Name = "TextLabelToggle"
-    TextLabelToggle.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    TextLabelToggle.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     TextLabelToggle.AnchorPoint = Vector2.new(0.5, 0.5)
     TextLabelToggle.Position = UDim2.new(0.64, 0, 0.4, 0)
     TextLabelToggle.Size =  UDim2.new(0, 150, 0, 40)
@@ -646,7 +646,7 @@ function  ems:Toggle(text,de,callback)
     local TextButton_2_Toggle = Instance.new("TextButton")
 
     TextButton_2_Toggle.Parent = ToggleButton2
-    TextButton_2_Toggle.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    TextButton_2_Toggle.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     TextButton_2_Toggle.BorderColor3 = Color3.fromRGB(249, 53, 139)
     TextButton_2_Toggle.BorderSizePixel = 0
     TextButton_2_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -663,7 +663,7 @@ function  ems:Toggle(text,de,callback)
 
     TextButton_3_Toggle.Parent = TextButton_2_Toggle
     TextButton_3_Toggle.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-    TextButton_3_Toggle.BorderColor3 = Color3.fromRGB(255, 0, 95)
+    TextButton_3_Toggle.BorderColor3 = Color3.fromRGB(0, 205, 95)
     TextButton_3_Toggle.BorderSizePixel = 0
     TextButton_3_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
     TextButton_3_Toggle.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -802,7 +802,7 @@ function ems:DropDown(text,text2,list,callback)
 
     TextLabelDrop.Parent = DropFrame
     TextLabelDrop.Name = "TextLabelDrop"
-    TextLabelDrop.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    TextLabelDrop.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     TextLabelDrop.BackgroundTransparency = 1
     TextLabelDrop.AnchorPoint = Vector2.new(0.5, 0.5)
     TextLabelDrop.Position = UDim2.new(0.5, 0, 0.2, 0)
@@ -818,7 +818,7 @@ function ems:DropDown(text,text2,list,callback)
     
     FrameDrop.Name = "FrameDrop"
     FrameDrop.Parent = DropFrame
-    FrameDrop.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    FrameDrop.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     FrameDrop.BorderSizePixel = 0
     FrameDrop.BackgroundTransparency = 1
     FrameDrop.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -830,7 +830,7 @@ function ems:DropDown(text,text2,list,callback)
     local DropButton = Instance.new("TextButton")
 
     DropButton.Parent = FrameDrop
-    DropButton.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    DropButton.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     DropButton.BackgroundTransparency = 1
     DropButton.AnchorPoint = Vector2.new(0.5, 0.5)
     DropButton.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -848,7 +848,7 @@ function ems:DropDown(text,text2,list,callback)
 
     TextLabelDrop2.Parent = DropButton
     TextLabelDrop2.Name = "TextLabelDrop"
-    TextLabelDrop2.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    TextLabelDrop2.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     TextLabelDrop2.BackgroundTransparency = 1
     TextLabelDrop2.AnchorPoint = Vector2.new(0.5, 0.5)
     TextLabelDrop2.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -877,7 +877,7 @@ function ems:DropDown(text,text2,list,callback)
     local TextButton_Dropdown = Instance.new("TextButton")
 
     TextButton_Dropdown.Parent = DropButton
-    TextButton_Dropdown.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    TextButton_Dropdown.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     TextButton_Dropdown.BorderSizePixel = 0
     TextButton_Dropdown.Size = UDim2.new(0, 22, 0, 24)
     TextButton_Dropdown.Font = Enum.Font.SourceSans
@@ -1120,7 +1120,7 @@ end
     listDropButton.Size = UDim2.new(0, 155, 0, 24)
     listDropButton.Font = Enum.Font.GothamSemibold
     listDropButton.Text = tostring(text2)
-    listDropButton.TextColor3 = Color3.fromRGB(255, 0, 95)
+    listDropButton.TextColor3 = Color3.fromRGB(0, 205, 95)
     listDropButton.TextSize = 11.000
     listDropButton.AutoButtonColor = false 
     listDropButton.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1220,13 +1220,13 @@ function ems:Slder(text,min,max,de,callback)
                     
     SlisFrameStroke.Thickness = 1
     SlisFrameStroke.LineJoinMode = Enum.LineJoinMode.Round
-    SlisFrameStroke.Color = Color3.fromRGB(255, 0, 95)
+    SlisFrameStroke.Color = Color3.fromRGB(0, 205, 95)
     SlisFrameStroke.Transparency = 0
     local TalabelSlider = Instance.new("TextLabel") 
 
     TalabelSlider.Parent = SliderFrame
     TalabelSlider.Name = "TalabelSlider"
-    TalabelSlider.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    TalabelSlider.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     TalabelSlider.BackgroundTransparency = 1
     TalabelSlider.AnchorPoint = Vector2.new(0.5, 0.5)
     TalabelSlider.Position = UDim2.new(0.5, 0, 0.2, 0)
@@ -1271,7 +1271,7 @@ function ems:Slder(text,min,max,de,callback)
 
     MainValue.Name = "MainValue"
     MainValue.Parent = SecValue
-    MainValue.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    MainValue.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     MainValue.BorderSizePixel = 0
     MainValue.BackgroundTransparency = 0
     -- MainValue.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1330,7 +1330,7 @@ function ems:Slder(text,min,max,de,callback)
                     
     MheeFrameStroke1.Thickness = 1
     MheeFrameStroke1.LineJoinMode = Enum.LineJoinMode.Round
-    MheeFrameStroke1.Color = Color3.fromRGB(255, 0, 95)
+    MheeFrameStroke1.Color = Color3.fromRGB(0, 205, 95)
     MheeFrameStroke1.Transparency = 0
 
     local CustomValue = Instance.new("TextBox")
@@ -1477,7 +1477,7 @@ function ems:Ti(text)
     local  lineframe2 = Instance.new("TextLabel")
                   
     lineframe2.Parent = tiframe
-    lineframe2.BackgroundColor3 = Color3.fromRGB(255, 0, 95)
+    lineframe2.BackgroundColor3 = Color3.fromRGB(0, 205, 95)
     lineframe2.BackgroundTransparency = 0
     lineframe2.AnchorPoint = Vector2.new(0.5, 0.5)
     lineframe2.Position = UDim2.new(1, 0, 0.4, 0)
