@@ -10,6 +10,17 @@ local get = setmetatable({}, {
     end
 })
 
+local WeaponEquipped = function(character)
+	if character then
+		local ServerControl = character:WaitForChild("ServerControl")
+		local CurrentWep = ServerControl:WaitForChild("CurrentWep")
+		if CurrentWep.Value ~= "" then
+			return true;
+		end
+	end
+	return false;
+end
+
 local tab1, tab2, tab3, tab4 = gui:AddTab("Main"), gui:AddTab("Farm Options"), gui:AddTab("Trainer"), gui:AddTab("Misc")
 local btn, btn2, btn3, key, nmc, trainers, labels
 local findobj, findobjofclass, waitforobj, fire, invoke = get.FindFirstChild, get.FindFirstChildOfClass, get.WaitForChild, Instance.new("RemoteEvent").FireServer, Instance.new("RemoteFunction").InvokeServer
@@ -495,9 +506,11 @@ while wait(.5) do
 
                     if not array.found then
                         while findobj(findobj(npc.Parent, npc.Name), "Head") and player.Character.Humanoid.Health > 0 and array.autofarm do
-                            if not findobj(player.Character, "Kagune") and not findobj(player.Character, "Quinque")  then
-                                pressKey(array.stage)
-                            end
+
+							if WeaponEquipped(player.Character) == false then
+								pressKey(array.stage)
+							end
+
                             if myData:Get("Boss")[npc.Name] or npc.Parent.Name == "GyakusatsuSpawn" then 
                                 for x,y in pairs(myData:Get("Skills")) do
                                     if player.PlayerFolder.CanAct.Value and y and array.skills[x].Value ~= "DownTime" then
