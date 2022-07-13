@@ -453,6 +453,7 @@ end
 while true do
     if array.autofarm then
         pcall(function()
+			wait(3)
             if player.Character.Humanoid.Health > 0 and player.Character.HumanoidRootPart and player.Character.Remotes.KeyEvent then
                 if not findobj(player.Character, "Kagune") and not findobj(player.Character, "Quinque")  then
                     pressKey(array.stage)
