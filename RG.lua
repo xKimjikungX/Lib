@@ -450,7 +450,8 @@ do
 end
 
 -- auto farm
-while true do
+game:GetService("RunService").RenderStepped:Connect(function()
+
     if array.autofarm then
         pcall(function()
             if player.Character.Humanoid.Health > 0 and player.Character.HumanoidRootPart and player.Character.Remotes.KeyEvent then
@@ -537,4 +538,5 @@ while true do
         labels("text", "")
     end
     wait()
-end
+
+end)
