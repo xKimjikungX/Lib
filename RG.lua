@@ -450,7 +450,7 @@ do
 end
 
 -- auto farm
-game:GetService("RunService").RenderStepped:Connect(function()
+while wait(.5) do
 
     if array.autofarm then
         pcall(function()
@@ -539,4 +539,4 @@ game:GetService("RunService").RenderStepped:Connect(function()
     end
     wait()
 
-end)
+end
