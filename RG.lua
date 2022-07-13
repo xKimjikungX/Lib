@@ -453,9 +453,8 @@ end
 while true do
     if array.autofarm then
         pcall(function()
-			wait(3)
             if player.Character.Humanoid.Health > 0 and player.Character.HumanoidRootPart and player.Character.Remotes.KeyEvent then
-                if not findobj(player.Character, "Kagune") and not findobj(player.Character, "Quinque")  then
+                if not game.Players.LocalPlayer.Character:FindFirstChild("Kagune") and not game.Players.LocalPlayer.Character:FindFirstChild("Quinque")  then
                     pressKey(array.stage)
                 end
                 if myData:Get("ReputationFarm") and (not findobj(player.PlayerFolder.CurrentQuest.Complete, "Aogiri Member") or player.PlayerFolder.CurrentQuest.Complete["Aogiri Member"].Value == player.PlayerFolder.CurrentQuest.Complete["Aogiri Member"].Max.Value) then
