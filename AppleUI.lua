@@ -104,7 +104,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     main.Name = "main"
     main.Parent = scrgui
     main.AnchorPoint = Vector2.new(0.5, 0.5)
-    main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     main.BackgroundTransparency = 0.150
     main.Position = UDim2.new(0.5, 0, 2, 0)
     main.Size = UDim2.new(0, 721, 0, 584)
