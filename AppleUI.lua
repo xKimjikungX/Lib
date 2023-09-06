@@ -52,7 +52,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
         splash.Name = "splash"
         splash.Parent = scrgui
         splash.AnchorPoint = Vector2.new(0.5, 0.5)
-        splash.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        splash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         splash.BackgroundTransparency = 0.600
         splash.Position = UDim2.new(0.5, 0, 2, 0)
         splash.Size = UDim2.new(0, 340, 0, 340)
@@ -104,7 +104,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     main.Name = "main"
     main.Parent = scrgui
     main.AnchorPoint = Vector2.new(0.5, 0.5)
-    main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     main.BackgroundTransparency = 0.150
     main.Position = UDim2.new(0.5, 0, 2, 0)
     main.Size = UDim2.new(0, 721, 0, 584)
@@ -155,7 +155,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     local workarea = Instance.new("Frame")
     workarea.Name = "workarea"
     workarea.Parent = main
-    workarea.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    workarea.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
     workarea.Position = UDim2.new(0.36403501, 0, 0, 0)
     workarea.Size = UDim2.new(0, 458, 0, 584)
 
@@ -166,7 +166,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     local workareacornerhider = Instance.new("Frame")
     workareacornerhider.Name = "workareacornerhider"
     workareacornerhider.Parent = workarea
-    workareacornerhider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    workareacornerhider.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
     workareacornerhider.BorderSizePixel = 0
     workareacornerhider.Size = UDim2.new(0, 18, 0.99895674, 0)
 
@@ -176,7 +176,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     local search = Instance.new("Frame")
     search.Name = "search"
     search.Parent = main
-    search.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    search.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
     search.Position = UDim2.new(0.0256588068, 0, 0.0958904102, 0)
     search.Size = UDim2.new(0, 225, 0, 34)
 
@@ -187,7 +187,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     local searchicon = Instance.new("ImageButton")
     searchicon.Name = "searchicon"
     searchicon.Parent = search
-    searchicon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    searchicon.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
     searchicon.BackgroundTransparency = 1
     searchicon.BorderColor3 = Color3.fromRGB(27, 42, 53)
     searchicon.Position = UDim2.new(0.0379999988, -2, 0.138999999, 2)
