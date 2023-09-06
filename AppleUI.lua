@@ -1,4 +1,3 @@
-
 local CFAHub = {}
 
 warn("Preparing UI...")
