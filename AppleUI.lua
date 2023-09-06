@@ -151,7 +151,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
         ScrollBar = Color3.fromRGB(149, 149, 149),
         NotiBackground = Color3.fromRGB(0, 0, 0),
         Glow = Color3.fromRGB(79, 247, 211),
-        Logo = "rbxassetid://7409401226"
+        Logo = "rbxassetid://9010576467"
     }
 
     table.insert(CFAHub, title)
