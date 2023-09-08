@@ -1,4 +1,11 @@
+--[[
+  UI lib made by bungie#0001
+  
+  - Please do not use this without permission, I am working really hard on this UI to make it perfect and do not have a big 
+    problem with other people using it, please just make sure you message me and ask me before using.
+]]
 
+-- / Locals
 local Workspace = game:GetService("Workspace")
 local Player = game:GetService("Players").LocalPlayer
 local Mouse = Player:GetMouse()
@@ -747,10 +754,11 @@ function library:Introduction()
     xsxLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     xsxLogo.BackgroundTransparency = 1.000
     xsxLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
-    xsxLogo.Size = UDim2.new(0, 150, 0, 150)
+    xsxLogo.Size = UDim2.new(0, 448, 0, 150)
     xsxLogo.Visible = true
-    xsxLogo.Image = "http://www.roblox.com/asset/?id=9010576467"
+    xsxLogo.Image = "http://www.roblox.com/asset/?id=9365068051"
     xsxLogo.ImageColor3 = Color3.fromRGB(0, 255, 25)
+    xsxLogo.ImageTransparency = 1
 
     hashLogo.Name = "hashLogo"
     hashLogo.Parent = background
@@ -792,13 +800,6 @@ function library:Introduction()
     wait(2)
     TweenService:Create(hashLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
     wait(.1)
-    TweenService:Create(text, TweenTable["introduction"], {TextTransparency = 1}):Play()
-    wait(.1)
-    TweenService:Create(bar, TweenTable["introduction"], {Size = UDim2.new(0, 0, 0, 1)}):Play()
-    wait(.1)
-    TweenService:Create(background, TweenTable["introduction"], {BackgroundTransparency = 1}):Play()
-    TweenService:Create(edge, TweenTable["introduction"], {BackgroundTransparency = 1}):Play()
-    wait(.2)
     introduction:Destroy()
 end
 
