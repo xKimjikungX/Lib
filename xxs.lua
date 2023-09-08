@@ -1,9 +1,3 @@
---[[
-  UI lib made by bungie#0001
-  
-  - Please do not use this without permission, I am working really hard on this UI to make it perfect and do not have a big 
-    problem with other people using it, please just make sure you message me and ask me before using.
-]]
 
 -- / Locals
 local Workspace = game:GetService("Workspace")
@@ -750,7 +744,7 @@ function library:Introduction()
     barLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     barLayout.SortOrder = Enum.SortOrder.LayoutOrder
     
-    xsxLogo.Name = "xsxLogo"
+    xsxLogo.Name = "Green Zone"
     xsxLogo.Parent = background
     xsxLogo.AnchorPoint = Vector2.new(0.5, 0.5)
     xsxLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -762,7 +756,7 @@ function library:Introduction()
     xsxLogo.ImageColor3 = Color3.fromRGB(0, 255, 149)
     xsxLogo.ImageTransparency = 1
     
-    hashLogo.Name = "hashLogo"
+    hashLogo.Name = "Green Zone"
     hashLogo.Parent = background
     hashLogo.AnchorPoint = Vector2.new(0.5, 0.5)
     hashLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -770,8 +764,7 @@ function library:Introduction()
     hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
     hashLogo.Size = UDim2.new(0, 150, 0, 150)
     hashLogo.Visible = true
-    hashLogo.Image = "http://www.roblox.com/asset/?id=9365069861"
-    hashLogo.ImageColor3 = Color3.fromRGB(0, 255, 149)
+    hashLogo.Image = "http://www.roblox.com/asset/?id=9010576467"
     hashLogo.ImageTransparency = 1
     
     xsx.Name = "xsx"
