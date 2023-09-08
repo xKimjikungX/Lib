@@ -1,3 +1,4 @@
+
 local CFAHub = {}
 
 warn("Preparing UI...")
@@ -854,7 +855,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
 
             local Elements = {}
 
-            function Elements:CreateButton(btitle, callback)
+            function Elements:CreateButton(btitle,callback)
                 btitle = btitle or "Button"
                 callback = callback or function() end
 
@@ -876,7 +877,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
                 Objects[Button] = "TextColor"
                 Button.TextSize = 22.000
                 Button.TextWrapped = true
-                Button.TextXAlignment = Enum.TextXAlignment.Left
+                Button.TextXAlignment = Enum.TextXAlignment.Center
             
                 ButtonCorner.CornerRadius = UDim.new(0, 4)
                 ButtonCorner.Name = "ButtonCorner"
