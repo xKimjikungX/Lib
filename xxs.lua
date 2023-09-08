@@ -1,9 +1,3 @@
---[[
-  UI lib made by bungie#0001
-  
-  - Please do not use this without permission, I am working really hard on this UI to make it perfect and do not have a big 
-    problem with other people using it, please just make sure you message me and ask me before using.
-]]
 
 -- / Locals
 local Workspace = game:GetService("Workspace")
@@ -693,8 +687,7 @@ function library:Introduction()
     local barCorner = Instance.new("UICorner")
     local barLayout = Instance.new("UIListLayout")
     local xsxLogo = Instance.new("ImageLabel")
-    local xsx = Instance.new("TextLabel")
-    local text = Instance.new("TextLabel")
+    local hashLogo = Instance.new("ImageLabel")
     local pageLayout = Instance.new("UIListLayout")
     
     introduction.Name = "introduction"
@@ -758,6 +751,18 @@ function library:Introduction()
     xsxLogo.Size = UDim2.new(0, 150, 0, 150)
     xsxLogo.Visible = true
     xsxLogo.Image = "http://www.roblox.com/asset/?id=9010576467"
+    xsxLogo.ImageColor3 = Color3.fromRGB(0, 255, 25)
+
+    hashLogo.Name = "hashLogo"
+    hashLogo.Parent = background
+    hashLogo.AnchorPoint = Vector2.new(0.5, 0.5)
+    hashLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    hashLogo.BackgroundTransparency = 1.000
+    hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
+    hashLogo.Size = UDim2.new(0, 150, 0, 150)
+    hashLogo.Visible = true
+    hashLogo.Image = "http://www.roblox.com/asset/?id=9010576467"
+    hashLogo.ImageTransparency = 1
     xsxLogo.ImageTransparency = 1
 
     pageLayout.Name = "pageLayout"
@@ -765,6 +770,15 @@ function library:Introduction()
     pageLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     pageLayout.SortOrder = Enum.SortOrder.LayoutOrder
     pageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+    CreateTween("xsxRotation", 0)
+    local MinusAmount = -16
+    coroutine.wrap(function()
+        while wait() do
+            MinusAmount = MinusAmount + 0.4
+            TweenService:Create(xsxLogo, TweenTable["xsxRotation"], {Rotation = xsxLogo.Rotation - MinusAmount}):Play()
+        end
+    end)()
 
     TweenService:Create(edge, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
     TweenService:Create(background, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
@@ -778,6 +792,10 @@ function library:Introduction()
     wait(2)
     TweenService:Create(xsxLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
     wait(.2)
+    TweenService:Create(hashLogo, TweenTable["introduction"], {ImageTransparency = 0}):Play()
+    wait(2)
+    TweenService:Create(hashLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
+    wait(.1)
     TweenService:Create(text, TweenTable["introduction"], {TextTransparency = 1}):Play()
     wait(.1)
     TweenService:Create(xsx, TweenTable["introduction"], {TextTransparency = 1}):Play()
