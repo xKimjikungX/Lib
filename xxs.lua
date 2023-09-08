@@ -766,7 +766,7 @@ function library:Introduction()
     hashLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     hashLogo.BackgroundTransparency = 1.000
     hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
-    hashLogo.Size = UDim2.new(0, 150, 0, 150)
+    hashLogo.Size = UDim2.new(0, 200, 0, 200)
     hashLogo.Visible = true
     hashLogo.Image = "http://www.roblox.com/asset/?id=9010576467"
     hashLogo.ImageTransparency = 1
@@ -800,6 +800,11 @@ function library:Introduction()
     wait(2)
     TweenService:Create(hashLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
     wait(.1)
+    TweenService:Create(bar, TweenTable["introduction"], {Size = UDim2.new(0, 0, 0, 1)}):Play()
+    wait(.1)
+    TweenService:Create(background, TweenTable["introduction"], {BackgroundTransparency = 1}):Play()
+    TweenService:Create(edge, TweenTable["introduction"], {BackgroundTransparency = 1}):Play()
+    wait(.2)
     introduction:Destroy()
 end
 
