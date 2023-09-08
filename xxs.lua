@@ -1,3 +1,9 @@
+--[[
+  UI lib made by bungie#0001
+  
+  - Please do not use this without permission, I am working really hard on this UI to make it perfect and do not have a big 
+    problem with other people using it, please just make sure you message me and ask me before using.
+]]
 
 -- / Locals
 local Workspace = game:GetService("Workspace")
@@ -784,9 +790,6 @@ function library:Introduction()
     TweenService:Create(background, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
     wait(.2)
     TweenService:Create(bar, TweenTable["introduction"], {Size = UDim2.new(0, 298, 0, 1)}):Play()
-    wait(.2)
-    TweenService:Create(xsx, TweenTable["introduction"], {TextTransparency = 0}):Play()
-    TweenService:Create(text, TweenTable["introduction"], {TextTransparency = 0}):Play()
     wait(.3)
     TweenService:Create(xsxLogo, TweenTable["introduction"], {ImageTransparency = 0}):Play()
     wait(2)
@@ -797,8 +800,6 @@ function library:Introduction()
     TweenService:Create(hashLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
     wait(.1)
     TweenService:Create(text, TweenTable["introduction"], {TextTransparency = 1}):Play()
-    wait(.1)
-    TweenService:Create(xsx, TweenTable["introduction"], {TextTransparency = 1}):Play()
     wait(.1)
     TweenService:Create(bar, TweenTable["introduction"], {Size = UDim2.new(0, 0, 0, 1)}):Play()
     wait(.1)
