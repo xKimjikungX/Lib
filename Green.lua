@@ -1,5 +1,3 @@
--- update
-
 do 
     local ui =  game:GetService("CoreGui"):FindFirstChild("NBTxTP Lib") 
     if ui then
@@ -1512,7 +1510,7 @@ function ems:Label(text)
     Labelxd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Labelxd.BackgroundTransparency = 1
     Labelxd.AnchorPoint = Vector2.new(0.5, 0.5)
-    Labelxd.Position = UDim2.new(0.5, 0, 0.2, 0)
+    Labelxd.Position = UDim2.new(0.5, 0, 0.8, 0)
     Labelxd.BorderSizePixel = 0
     Labelxd.Size = UDim2.new(0, 155, 0, 13)
     Labelxd.Font = Enum.Font.GothamSemibold
