@@ -1514,6 +1514,7 @@ function ems:Label(text)
     Labelxd.BorderSizePixel = 0
     Labelxd.Size = UDim2.new(0, 155, 0, 13)
     Labelxd.Font = Enum.Font.GothamSemibold
+    Labelxd.TextXAlignment = Enum.TextXAlignment.Left
     Labelxd.Text = tostring(text)
     Labelxd.TextColor3 = Color3.fromRGB(255, 255, 255)
     Labelxd.TextSize = 12.000
