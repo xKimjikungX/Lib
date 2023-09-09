@@ -105,7 +105,7 @@ function create:Win()
     Logo.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
     Logo.BorderColor3 = Color3.fromRGB(27, 42, 53)
     Logo.BorderSizePixel = 0
-    Logo.Size = UDim2.new(0, 56, 0, 56)
+    Logo.Size = UDim2.new(0, 50, 0, 50)
     Logo.Image = "http://www.roblox.com/asset/?id=9010576467"
     
     local PageTap = Instance.new("Frame")
@@ -488,7 +488,7 @@ function ems:Button1(text,callback)
     
     ToggleFrame1.Name = "ToggleFrame"
     ToggleFrame1.Parent = ScolPage2
-    ToggleFrame1.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    ToggleFrame1.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     ToggleFrame1.BorderSizePixel = 0
     ToggleFrame1.BackgroundTransparency = 0
     ToggleFrame1.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -534,7 +534,7 @@ function ems:Button1(text,callback)
                     
     MheeFrameStroke1.Thickness = 1
     MheeFrameStroke1.LineJoinMode = Enum.LineJoinMode.Round
-    MheeFrameStroke1.Color = Color3.fromRGB(0, 255, 123)
+    MheeFrameStroke1.Color = Color3.fromRGB(0, 162, 78)
     MheeFrameStroke1.Transparency = 0
 
     emsTextButton1.MouseButton1Click:Connect(function()
@@ -609,7 +609,7 @@ function  ems:Toggle(text,de,callback)
     local ToggleButton2 = Instance.new("TextButton")
 
     ToggleButton2.Parent = ToggleFrame
-    ToggleButton2.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    ToggleButton2.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     ToggleButton2.BackgroundTransparency = 1
     ToggleButton2.AnchorPoint = Vector2.new(0.5, 0.5)
     ToggleButton2.Position = UDim2.new(1, 0, 0.45, 0)
@@ -626,7 +626,7 @@ function  ems:Toggle(text,de,callback)
 
     TextLabelToggle.Parent = ToggleButton
     TextLabelToggle.Name = "TextLabelToggle"
-    TextLabelToggle.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    TextLabelToggle.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     TextLabelToggle.AnchorPoint = Vector2.new(0.5, 0.5)
     TextLabelToggle.Position = UDim2.new(0.64, 0, 0.4, 0)
     TextLabelToggle.Size =  UDim2.new(0, 150, 0, 40)
@@ -644,7 +644,7 @@ function  ems:Toggle(text,de,callback)
     local TextButton_2_Toggle = Instance.new("TextButton")
 
     TextButton_2_Toggle.Parent = ToggleButton2
-    TextButton_2_Toggle.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    TextButton_2_Toggle.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     TextButton_2_Toggle.BorderColor3 = Color3.fromRGB(1, 255, 166)
     TextButton_2_Toggle.BorderSizePixel = 0
     TextButton_2_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -661,7 +661,7 @@ function  ems:Toggle(text,de,callback)
 
     TextButton_3_Toggle.Parent = TextButton_2_Toggle
     TextButton_3_Toggle.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-    TextButton_3_Toggle.BorderColor3 = Color3.fromRGB(0, 255, 123)
+    TextButton_3_Toggle.BorderColor3 = Color3.fromRGB(0, 162, 78)
     TextButton_3_Toggle.BorderSizePixel = 0
     TextButton_3_Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
     TextButton_3_Toggle.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -787,7 +787,7 @@ function ems:DropDown(text,text2,list,callback)
 
     DropFrame.Name = "DropFrame"
     DropFrame.Parent = ScolPage2
-    DropFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    DropFrame.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     DropFrame.BorderSizePixel = 0
     DropFrame.BackgroundTransparency = 1
     DropFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -800,7 +800,7 @@ function ems:DropDown(text,text2,list,callback)
 
     TextLabelDrop.Parent = DropFrame
     TextLabelDrop.Name = "TextLabelDrop"
-    TextLabelDrop.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    TextLabelDrop.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     TextLabelDrop.BackgroundTransparency = 1
     TextLabelDrop.AnchorPoint = Vector2.new(0.5, 0.5)
     TextLabelDrop.Position = UDim2.new(0.5, 0, 0.2, 0)
@@ -816,7 +816,7 @@ function ems:DropDown(text,text2,list,callback)
     
     FrameDrop.Name = "FrameDrop"
     FrameDrop.Parent = DropFrame
-    FrameDrop.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    FrameDrop.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     FrameDrop.BorderSizePixel = 0
     FrameDrop.BackgroundTransparency = 1
     FrameDrop.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -828,7 +828,7 @@ function ems:DropDown(text,text2,list,callback)
     local DropButton = Instance.new("TextButton")
 
     DropButton.Parent = FrameDrop
-    DropButton.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    DropButton.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     DropButton.BackgroundTransparency = 1
     DropButton.AnchorPoint = Vector2.new(0.5, 0.5)
     DropButton.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -846,7 +846,7 @@ function ems:DropDown(text,text2,list,callback)
 
     TextLabelDrop2.Parent = DropButton
     TextLabelDrop2.Name = "TextLabelDrop"
-    TextLabelDrop2.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    TextLabelDrop2.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     TextLabelDrop2.BackgroundTransparency = 1
     TextLabelDrop2.AnchorPoint = Vector2.new(0.5, 0.5)
     TextLabelDrop2.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -875,7 +875,7 @@ function ems:DropDown(text,text2,list,callback)
     local TextButton_Dropdown = Instance.new("TextButton")
 
     TextButton_Dropdown.Parent = DropButton
-    TextButton_Dropdown.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    TextButton_Dropdown.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     TextButton_Dropdown.BorderSizePixel = 0
     TextButton_Dropdown.Size = UDim2.new(0, 22, 0, 24)
     TextButton_Dropdown.Font = Enum.Font.SourceSans
@@ -906,7 +906,7 @@ function ems:DropDown(text,text2,list,callback)
     
     ListFrame.Name = "ListFrame"
     ListFrame.Parent = ScolPage2
-    ListFrame.BackgroundColor3 = Color3.fromRGB(0, 255, 123)
+    ListFrame.BackgroundColor3 = Color3.fromRGB(0, 162, 78)
     ListFrame.BorderSizePixel = 0
     ListFrame.BackgroundTransparency = 1
     ListFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -972,7 +972,7 @@ function ems:DropDown(text,text2,list,callback)
     listDropButton.Size = UDim2.new(0, 155, 0, 24)
     listDropButton.Font = Enum.Font.GothamSemibold
     listDropButton.Text = tostring(v)
-    listDropButton.TextColor3 = Color3.fromRGB(0, 255, 76)
+    listDropButton.TextColor3 = Color3.fromRGB(0, 162, 78)
     listDropButton.TextSize = 11.000
     listDropButton.AutoButtonColor = false 
     listDropButton.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1118,7 +1118,7 @@ end
     listDropButton.Size = UDim2.new(0, 155, 0, 24)
     listDropButton.Font = Enum.Font.GothamSemibold
     listDropButton.Text = tostring(text2)
-    listDropButton.TextColor3 = Color3.fromRGB(0, 255, 123)
+    listDropButton.TextColor3 = Color3.fromRGB(0, 162, 78)
     listDropButton.TextSize = 11.000
     listDropButton.AutoButtonColor = false 
     listDropButton.AnchorPoint = Vector2.new(0.5, 0.5)
