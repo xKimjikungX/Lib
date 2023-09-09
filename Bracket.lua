@@ -30,7 +30,7 @@ end
 
 function Library:CreateWindow(title, color)
     title = title or "Bracket Lib V2"
-    color = color and Library:GetColor(color) or Color3.fromRGB(19, 119, 255)
+    color = color and Library:GetColor(color) or Color3.fromRGB(0, 255, 149)
 
     -- Window Main
     local WinTypes = {}
